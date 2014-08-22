@@ -63,8 +63,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 5, ../scss/components/_input.scss */
-header .Login-form .Login .Form input[type="text"], header .Login-form .Login .Form input[type="password"] {
+/* line 1, ../scss/components/_input.scss */
+input[type="text"], input[type="password"] {
+  color: #fff;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1px 3px;
@@ -73,26 +74,35 @@ header .Login-form .Login .Form input[type="text"], header .Login-form .Login .F
   background: transparent;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15), 1px 1px 0px rgba(86, 100, 38, 0.47) inset, 1px 1px 5px rgba(86, 100, 38, 0.5) inset;
 }
-/* line 16, ../scss/components/_input.scss */
-header .Login-form .Login .Form input[type="text"]:focus, header .Login-form .Login .Form input[type="password"]:focus {
-  border: 2px solid blue;
+
+/* line 12, ../scss/components/_input.scss */
+input[type="text"]:focus, input[type="password"]:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 20, ../scss/components/_input.scss */
-header .Login-form .Login .Form input[type="submit"] {
+
+/* line 16, ../scss/components/_input.scss */
+input[type="submit"] {
   margin-top: 10px;
   float: right;
   width: 48px;
   height: 22px;
   text-align: center;
-  border: 0px;
+  border: 1px solid #c8c8c8;
   padding: 0px;
   color: #5f5f5e;
   font-size: 12px;
   border-radius: 3px 3px;
-  background: linear-gradient(-45deg, #ffffff, #ffffff);
+  background: linear-gradient(0deg, #dcdcdc, #ffffff, #dcdcdc);
   box-shadow: 1px 4px 5px -1px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   text-shadow: 1px 1px 0 #fff;
+}
+
+/* line 33, ../scss/components/_input.scss */
+input[type="submit"]:active {
+  color: green;
+  background: white;
+  box-shadow: none;
 }
 
 /* line 1, ../scss/widgets/_header.scss */
@@ -109,58 +119,66 @@ body header {
 }
 /* line 9, ../scss/widgets/_header.scss */
 body header .Logo {
+  margin: 30px 0 0px 23px;
   float: left;
-  width: 230px;
-  height: 100%;
+  width: 227px;
+  height: 133px;
+  background: url(http://www.fundscholar.com/resources/images/logo.png) no-repeat 0 -5px;
 }
-/* line 13, ../scss/widgets/_header.scss */
-body header .Logo img {
-  height: 165px;
-}
-/* line 17, ../scss/widgets/_header.scss */
+/* line 18, ../scss/widgets/_header.scss */
 body header .Button {
   float: left;
   margin: 110px 60px 10px;
+  font-size: 0;
 }
-/* line 20, ../scss/widgets/_header.scss */
+/* line 23, ../scss/widgets/_header.scss */
 body header .Button li {
   display: inline-block;
+  margin-right: 2px;
 }
-/* line 22, ../scss/widgets/_header.scss */
+/* line 26, ../scss/widgets/_header.scss */
 body header .Button li a {
   display: block;
   font-size: 15px;
   color: #5f5f5e;
   width: 100px;
   height: 45px;
+  box-sizing: border-box;
   text-align: center;
   line-height: 44px;
   text-decoration: none;
   border-radius: 3px 3px;
-  background: linear-gradient(-45deg, #ffffff, #ffffff);
+  border: 1px solid #c8c8c8;
+  background: linear-gradient(0deg, #dcdcdc, #ffffff, #dcdcdc);
   box-shadow: 0 10px 12px -8px;
 }
-/* line 40, ../scss/widgets/_header.scss */
+/* line 42, ../scss/widgets/_header.scss */
+body header .Button li a:active {
+  color: green;
+  background: white;
+  box-shadow: none;
+}
+/* line 51, ../scss/widgets/_header.scss */
 body header .Login-form {
-  display: inline-block;
+  float: right;
   margin: 50px 30px 10px 0;
-  width: 195px;
+  width: 185px;
   height: 100px;
   border: 1px dashed rgba(0, 0, 0, 0.2);
-  background: linear-gradient(-45deg, rgba(87, 81, 233, 0.1), rgba(87, 81, 233, 0.6));
+  background: url(http://www.fundscholar.com/resources/images/flare.png);
 }
-/* line 48, ../scss/widgets/_header.scss */
+/* line 60, ../scss/widgets/_header.scss */
 body header .Login-form .Login {
   width: 100%;
   height: 100%;
   border: 1px dashed rgba(255, 255, 255, 0.25);
 }
-/* line 52, ../scss/widgets/_header.scss */
+/* line 64, ../scss/widgets/_header.scss */
 body header .Login-form .Login .Form {
   padding: 17px 17px 0;
   font-size: 9px;
 }
-/* line 80, ../scss/widgets/_header.scss */
+/* line 92, ../scss/widgets/_header.scss */
 body header:after {
   clear: both;
 }
@@ -172,5 +190,5 @@ html {
 }
 /* line 4, ../scss/layout/_html.scss */
 html body {
-  background: linear-gradient(-45deg, #ffffff, #0000ff);
+  background: url(http://www.fundscholar.com/resources/images/font-img.png) no-repeat 50% 0;
 }

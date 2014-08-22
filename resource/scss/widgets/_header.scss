@@ -7,43 +7,55 @@ body{
 		border: 1px solid;
 		box-sizing: border-box;
 		.Logo{
+			
+			margin: 30px 0 0px 23px;
 			float: left;
-			width: 230px;
-			height: 100%;
-			img{
-				height: 165px;
-			}
+			width: 227px;
+			height: 133px;
+			background: url(http://www.fundscholar.com/resources/images/logo.png) no-repeat 0 -5px;
+			
 		}
 		.Button{
 			float: left;
 			margin: 110px 60px 10px;
+			font-size: 0;
+			
 			li{
 				display: inline-block;
+				margin-right: 2px;
 				a{
 					display: block;
 					font-size: 15px;
 					color: #5f5f5e;
 					width: 100px;
 					height: 45px;
+					box-sizing:border-box;
 					text-align: center;
 					line-height: 44px;
 					text-decoration: none;
 					border-radius: 3px 3px;
-					background: linear-gradient(-45deg,white,white);
+					border: 1px solid rgba(200,200,200,1);
+					background: linear-gradient(0deg,rgba(220,220,220,1),white,rgba(220,220,220,1));
 					box-shadow: 0 10px 12px -8px;
 					
+				}
+				a:active{
+					color: green;
+					background:white;
+					box-shadow:none;
 				}
 			}
 			
 
 		}
 		.Login-form{
-			display: inline-block;
+			float: right;
+			//display: inline-block;
 			margin: 50px 30px 10px 0;
-			width: 195px;
+			width: 185px;
 			height: 100px;
 			border: 1px dashed rgba(0,0,0,0.2);
-			background: linear-gradient(-45deg,rgba(87,81,233,0.1),rgba(87,81,233,0.6));
+			background: url(http://www.fundscholar.com/resources/images/flare.png);
 
 			.Login{
 				width: 100%;

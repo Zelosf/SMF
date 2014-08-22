@@ -1,39 +1,37 @@
-header{
-	.Login-form{			
-		.Login{				
-			.Form{					
-				input[type="text"],input[type="password"]{
-					width: 100%;
-					border: 1px solid rgba(0,0,0,0.1);
-					padding: 1px 3px;
-					border-radius: 3px 3px;
-					box-sizing: border-box;
-					background: transparent;
-					box-shadow: 0 1px 0 rgba(255,255,255,0.15),1px 1px 0px rgba(86,100,38,0.47) inset,1px 1px 5px rgba(86,100,38,0.5) inset;
-
-				}
-				
-				input[type="text"]:focus,input[type="password"]:focus{
-					border: 2px solid blue;
-				}
+input[type="text"],input[type="password"]{
+	color: #fff;
+	width: 100%;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 1px 3px;
+	border-radius: 3px 3px;
+	box-sizing: border-box;
+	background: transparent;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.15),1px 1px 0px rgba(86,100,38,0.47) inset,1px 1px 5px rgba(86,100,38,0.5) inset;
+}
+			
+input[type="text"]:focus,input[type="password"]:focus{
+	border: 1px solid rgba(0,0,0,0.1);
+}
 					
-				input[type="submit"]{
-					margin-top: 10px;
-					float: right;
-					width: 48px;
-					height: 22px;
-					text-align: center;
-					border: 0px;
-					padding: 0px;
-					color: #5f5f5e;
-					font-size: 12px;
-					border-radius: 3px 3px;
-					background: linear-gradient(-45deg,white,white);
-					box-shadow: 1px 4px 5px -1px rgba(0,0,0,0.15);
-					cursor: pointer;
-					text-shadow: 1px 1px 0 #fff;
-				}
-			}
-		}
-	}
+input[type="submit"]{
+	margin-top: 10px;
+	float: right;
+	width: 48px;
+	height: 22px;
+	text-align: center;
+	border: 1px solid rgba(200,200,200,1);
+	padding: 0px;
+	color: #5f5f5e;
+	font-size: 12px;
+	border-radius: 3px 3px;
+	background: linear-gradient(0deg,rgba(220,220,220,1),white,rgba(220,220,220,1));
+	box-shadow: 1px 4px 5px -1px rgba(0,0,0,0.15);
+	cursor: pointer;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+input[type="submit"]:active{
+	color: green;
+	background:white;
+	box-shadow:none;
 }
