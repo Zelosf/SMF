@@ -77,12 +77,20 @@ input[type="text"], input[type="password"] {
 
 /* line 12, ../scss/components/_input.scss */
 input[type="text"]:focus, input[type="password"]:focus {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.15), 2px 2px 0px rgba(86, 100, 38, 0.47) inset, 2px 2px 6px rgba(86, 100, 38, 0.5) inset;
+  outline: none;
 }
 
-/* line 16, ../scss/components/_input.scss */
+/* line 17, ../scss/components/_input.scss */
+input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder {
+  color: #fed;
+  font-size: 10px;
+  line-height: 18px;
+}
+
+/* line 23, ../scss/components/_input.scss */
 input[type="submit"] {
-  margin-top: 10px;
+  margin-top: 5px;
   float: right;
   width: 48px;
   height: 22px;
@@ -98,51 +106,52 @@ input[type="submit"] {
   text-shadow: 1px 1px 0 #fff;
 }
 
-/* line 33, ../scss/components/_input.scss */
+/* line 40, ../scss/components/_input.scss */
 input[type="submit"]:active {
   color: green;
   background: white;
   box-shadow: none;
+  outline: none;
 }
 
 /* line 1, ../scss/widgets/_header.scss */
 body {
   font-family: Tahoma,Arial;
+  font-size: 12px;
 }
-/* line 3, ../scss/widgets/_header.scss */
+/* line 4, ../scss/widgets/_header.scss */
 body header {
-  margin: 0 auto;
   width: 1000px;
   height: 165px;
-  border: 1px solid;
   box-sizing: border-box;
 }
-/* line 9, ../scss/widgets/_header.scss */
+/* line 12, ../scss/widgets/_header.scss */
 body header .Logo {
+  display: inline-block;
   margin: 30px 0 0px 23px;
-  float: left;
-  width: 227px;
-  height: 133px;
+  width: 220px;
+  height: 165px;
   background: url(http://www.fundscholar.com/resources/images/logo.png) no-repeat 0 -5px;
 }
-/* line 18, ../scss/widgets/_header.scss */
+/* line 21, ../scss/widgets/_header.scss */
 body header .Button {
-  float: left;
-  margin: 110px 60px 10px;
+  display: inline-block;
+  margin: 110px 58px 10px;
   font-size: 0;
+  vertical-align: top;
 }
-/* line 23, ../scss/widgets/_header.scss */
+/* line 28, ../scss/widgets/_header.scss */
 body header .Button li {
   display: inline-block;
   margin-right: 2px;
 }
-/* line 26, ../scss/widgets/_header.scss */
+/* line 31, ../scss/widgets/_header.scss */
 body header .Button li a {
   display: block;
   font-size: 15px;
   color: #5f5f5e;
-  width: 100px;
-  height: 45px;
+  width: 98px;
+  height: 44px;
   box-sizing: border-box;
   text-align: center;
   line-height: 44px;
@@ -152,43 +161,215 @@ body header .Button li a {
   background: linear-gradient(0deg, #dcdcdc, #ffffff, #dcdcdc);
   box-shadow: 0 10px 12px -8px;
 }
-/* line 42, ../scss/widgets/_header.scss */
+/* line 47, ../scss/widgets/_header.scss */
 body header .Button li a:active {
   color: green;
   background: white;
   box-shadow: none;
 }
-/* line 51, ../scss/widgets/_header.scss */
+/* line 56, ../scss/widgets/_header.scss */
 body header .Login-form {
-  float: right;
+  display: inline-block;
   margin: 50px 30px 10px 0;
-  width: 185px;
+  vertical-align: top;
+  width: 200px;
   height: 100px;
   border: 1px dashed rgba(0, 0, 0, 0.2);
-  background: url(http://www.fundscholar.com/resources/images/flare.png);
+  background: url(http://www.fundscholar.com/resources/images/flare.png) 2px;
+  box-sizing: border-box;
 }
-/* line 60, ../scss/widgets/_header.scss */
+/* line 67, ../scss/widgets/_header.scss */
 body header .Login-form .Login {
   width: 100%;
   height: 100%;
   border: 1px dashed rgba(255, 255, 255, 0.25);
 }
-/* line 64, ../scss/widgets/_header.scss */
+/* line 72, ../scss/widgets/_header.scss */
 body header .Login-form .Login .Form {
   padding: 17px 17px 0;
   font-size: 9px;
 }
-/* line 92, ../scss/widgets/_header.scss */
+/* line 81, ../scss/widgets/_header.scss */
 body header:after {
   clear: both;
 }
 
+/* line 1, ../scss/widgets/_main.scss */
+main {
+  background: url("../images/shadow-left.png") no-repeat left top, url("../images/shadow-right.png") no-repeat right top;
+  width: 1000px;
+  padding: 11px 30px 0px 22px;
+  position: relative;
+  left: -23px;
+}
+/* line 11, ../scss/widgets/_main.scss */
+main .content {
+  display: inline-block;
+  width: 100%;
+  margin: 4px;
+  background: url("../images/paper-left.png") no-repeat left top, url("../images/paper-right.png") no-repeat right top;
+  background-color: #f5f5f5;
+  box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}
+/* line 22, ../scss/widgets/_main.scss */
+main .content .double_border {
+  margin: 6px;
+  border: 1px solid #dcdcdc;
+}
+/* line 27, ../scss/widgets/_main.scss */
+main .content .double_border .section {
+  position: relative;
+  margin: 1px;
+  border: 1px solid #dcdcdc;
+  display: block;
+}
+/* line 34, ../scss/widgets/_main.scss */
+main .content .double_border .section h1 {
+  display: inline-block;
+  width: 800px;
+  margin: 20px 20px 10px;
+  font-family: "Merriweather",serif;
+  color: #5f5f5e;
+  font-size: 18px;
+}
+/* line 43, ../scss/widgets/_main.scss */
+main .content .double_border .section h1 span {
+  text-transform: uppercase;
+  color: #77b800;
+}
+/* line 49, ../scss/widgets/_main.scss */
+main .content .double_border .section a.all_categorias {
+  display: inline-block;
+  width: 100px;
+  font-size: 12px;
+  color: #77b800;
+  text-align: right;
+  text-decoration: none;
+  background: url("../images/arrow.png") right center no-repeat;
+  padding-right: 10px;
+}
+/* line 60, ../scss/widgets/_main.scss */
+main .content .double_border .section .main_catalog {
+  display: inline-block;
+  margin: 12px;
+}
+/* line 64, ../scss/widgets/_main.scss */
+main .content .double_border .section .main_catalog .child_catalog {
+  display: inline-block;
+  margin: 7px;
+  width: 220px;
+  height: 162px;
+  border: 1px dashed #d6d0c3;
+  background: url("../images/fund-font.png") repeat-y;
+}
+/* line 74, ../scss/widgets/_main.scss */
+main .content .double_border .section .main_catalog .child_catalog .catalog_content a.content_name {
+  padding-left: 8px;
+  font-family: "Merriweather",serif;
+  font-size: 15px;
+  color: #0096db;
+  text-decoration: none;
+  height: 33px;
+  line-height: 39px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 0 #fff;
+}
+/* line 87, ../scss/widgets/_main.scss */
+main .content .double_border .section .main_catalog .child_catalog .catalog_content .info_content {
+  display: inline-block;
+  width: 220px;
+  height: 69px;
+  background: rgba(231, 231, 231, 0.5);
+}
+/* line 93, ../scss/widgets/_main.scss */
+main .content .double_border .section .main_catalog .child_catalog .catalog_content .info_content .logo {
+  margin: 2px 0 2px 1px;
+  width: 65px;
+  height: 65px;
+  float: left;
+}
+/* line 100, ../scss/widgets/_main.scss */
+main .content .double_border .section .main_catalog .child_catalog .catalog_content .info_content .data {
+  width: 150px;
+  padding: 5px;
+  line-height: 15px;
+  font-size: 12px;
+  color: #002f4e;
+  box-sizing: border-box;
+  float: left;
+}
+/* line 108, ../scss/widgets/_main.scss */
+main .content .double_border .section .main_catalog .child_catalog .catalog_content .info_content .data b {
+  color: #5f5f5e;
+  padding-right: 2px;
+}
+/* line 112, ../scss/widgets/_main.scss */
+main .content .double_border .section .main_catalog .child_catalog .catalog_content .info_content .data b:after {
+  content: ":";
+}
+/* line 119, ../scss/widgets/_main.scss */
+main .content .double_border .section .main_catalog .child_catalog .catalog_content .description_content {
+  font-size: 12px;
+  color: #131313;
+  height: 40px;
+  padding: 10px;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+
+/* line 1, ../scss/widgets/_footer.scss */
+footer {
+  margin-top: -3px;
+  padding: 20px 0 55px 0;
+  width: 1000px;
+  text-align: center;
+  position: relative;
+  background: url("../images/footer-font.png") no-repeat;
+}
+/* line 9, ../scss/widgets/_footer.scss */
+footer ul {
+  margin: 30px 0 25px;
+}
+/* line 12, ../scss/widgets/_footer.scss */
+footer ul li {
+  margin: 0 15px;
+  display: inline-block;
+}
+/* line 16, ../scss/widgets/_footer.scss */
+footer ul li a {
+  font-size: 15px;
+  color: #5f5f5e;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+}
+/* line 23, ../scss/widgets/_footer.scss */
+footer ul li a:active {
+  color: green;
+}
+/* line 29, ../scss/widgets/_footer.scss */
+footer .copyright {
+  color: #5f5f5e;
+  text-shadow: 1px 1px 0 #fff;
+}
+
 /* line 1, ../scss/layout/_html.scss */
 html {
-  min-height: 1100px;
-  min-width: 1000px;
+  min-height: 500px;
+  min-width: 1100px;
 }
 /* line 4, ../scss/layout/_html.scss */
 html body {
+  background: url(http://www.fundscholar.com/resources/images/background.png);
+}
+/* line 6, ../scss/layout/_html.scss */
+html body .main_body {
   background: url(http://www.fundscholar.com/resources/images/font-img.png) no-repeat 50% 0;
+}
+/* line 10, ../scss/layout/_html.scss */
+html body .main_body .carcass {
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
 }

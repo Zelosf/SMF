@@ -1,0 +1,134 @@
+main {
+	background: url("../images/shadow-left.png") no-repeat left top ,url("../images/shadow-right.png") no-repeat right top;
+	
+	width: 1000px;
+	padding: 11px 30px 0px 22px;
+	position: relative;
+	left: -23px;
+	//border: 1px solid;
+	
+
+	.content {
+		display: inline-block;
+
+		width: 100%;
+		margin: 4px;
+			
+		background: url("../images/paper-left.png") no-repeat left top ,url("../images/paper-right.png") no-repeat right top;
+		background-color: #f5f5f5;
+		box-shadow: 0 0px 2px 2px rgba(0,0,0,0.12);
+		box-sizing: border-box;
+
+		.double_border{
+			margin: 6px;
+			border: 1px solid #dcdcdc;	
+
+		
+			.section {
+				position: relative;
+				margin: 1px;
+				border: 1px solid #dcdcdc;
+				display: block;
+				
+
+				h1{
+					display: inline-block;
+					width: 800px;
+					
+					margin: 20px 20px 10px;
+					font-family: "Merriweather",serif;
+					color: #5f5f5e;
+					font-size: 18px;
+					
+					span {
+						text-transform: uppercase;
+						color: #77b800;
+					}
+				}
+
+				a.all_categorias {
+					display: inline-block;
+					width: 100px;					
+					font-size: 12px;
+					color: #77b800;
+					text-align: right;
+					text-decoration: none;
+					background: url("../images/arrow.png") right center no-repeat;
+					padding-right: 10px;
+				}
+
+				.main_catalog {
+					display: inline-block;
+					margin: 12px;
+
+					.child_catalog {
+						display: inline-block;
+						margin: 7px;
+						width: 220px;
+						height: 162px;					
+						border: 1px dashed #d6d0c3;
+						background: url("../images/fund-font.png") repeat-y;
+
+						.catalog_content {
+
+							a.content_name {
+								padding-left: 8px;
+								font-family: "Merriweather",serif;
+								font-size: 15px;
+								color: #0096db;
+								text-decoration: none;
+								height: 33px;
+								line-height: 39px;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								text-shadow: 1px 1px 0 #fff;
+							}
+
+							.info_content {
+								display: inline-block;
+								width: 220px;
+								height: 69px;
+								background: rgba(231,231,231,0.5);
+
+								.logo {
+									margin: 2px 0 2px 1px;
+									width: 65px;
+									height: 65px;
+									float: left;
+								}
+
+								.data {
+									width: 150px;
+									padding: 5px;
+									line-height: 15px;
+									font-size: 12px;
+									color: #002f4e;
+									box-sizing: border-box;
+									float: left;
+									b {
+										color: #5f5f5e;
+										padding-right: 2px;
+									}
+									b:after {
+										content: ":";
+									}
+								}
+								
+							}
+
+							.description_content {
+								font-size: 12px;
+								color: #131313;
+								height: 40px;
+								padding: 10px;
+								line-height: 16px;
+								word-wrap: break-word;
+							}
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}

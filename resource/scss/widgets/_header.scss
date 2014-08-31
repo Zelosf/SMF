@@ -1,34 +1,39 @@
-body{
+body {
 	font-family: Tahoma,Arial;
-	header{
-		margin: 0 auto;
+	font-size: 12px;
+	header {
+		
 		width: 1000px;
 		height: 165px;
-		border: 1px solid;
+		//border: 1px solid;
 		box-sizing: border-box;
-		.Logo{
-			
+
+
+		.Logo {
+			display: inline-block;
+			//padding: 30px 0px 0px 23px;
 			margin: 30px 0 0px 23px;
-			float: left;
-			width: 227px;
-			height: 133px;
+			width: 220px;
+			height: 165px;
 			background: url(http://www.fundscholar.com/resources/images/logo.png) no-repeat 0 -5px;
 			
 		}
-		.Button{
-			float: left;
-			margin: 110px 60px 10px;
+		.Button {
+			display: inline-block;
+			//width: 560px;
+			margin: 110px 58px 10px;
 			font-size: 0;
+			vertical-align: top;
 			
-			li{
+			li {
 				display: inline-block;
 				margin-right: 2px;
-				a{
+				a {
 					display: block;
 					font-size: 15px;
 					color: #5f5f5e;
-					width: 100px;
-					height: 45px;
+					width: 98px;
+					height: 44px;
 					box-sizing:border-box;
 					text-align: center;
 					line-height: 44px;
@@ -39,7 +44,7 @@ body{
 					box-shadow: 0 10px 12px -8px;
 					
 				}
-				a:active{
+				a:active {
 					color: green;
 					background:white;
 					box-shadow:none;
@@ -48,48 +53,32 @@ body{
 			
 
 		}
-		.Login-form{
-			float: right;
-			//display: inline-block;
+		.Login-form {
+			
+			display: inline-block;
 			margin: 50px 30px 10px 0;
-			width: 185px;
+			vertical-align: top;			
+			width: 200px;
 			height: 100px;
 			border: 1px dashed rgba(0,0,0,0.2);
-			background: url(http://www.fundscholar.com/resources/images/flare.png);
+			background: url(http://www.fundscholar.com/resources/images/flare.png) 2px; 
+			box-sizing: border-box;
 
-			.Login{
+			.Login {
 				width: 100%;
 				height: 100%;
 				border: 1px dashed rgba(255,255,255,0.25);
-				.Form{
+
+				.Form {
 					
 					padding: 17px 17px 0;
 					font-size: 9px;
 					
-					
-					//input[type="text"],input[type="password"]{
-					//	width: 100%;
-					//	border-radius: 3px 3px;
-
-					//	box-sizing: border-box;
-
-					//}
-					//input[type="text"]:focus,input[type="password"]:focus{
-					//	border: 2px solid blue;
-					//}
-					//input[type="submit"]{
-					//	float: right;
-					//	color: #5f5f5e;
-					//	//border: none;
-					//	border-radius: 3px 3px;
-					//	background: linear-gradient(-45deg,white,white);
-					//	box-shadow: 0 10px 12px -8px;
-					//}
 				}
 			}
 		}
 	}
-	header:after{
+	header:after {
 		clear:both;
 	}
 }

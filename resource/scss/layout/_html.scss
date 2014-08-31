@@ -1,7 +1,18 @@
-html{
-	min-height:1100px;
-	min-width: 1000px;
+html {
+	min-height:500px;
+	min-width: 1100px;
 	body {
-		background: url(http://www.fundscholar.com/resources/images/font-img.png) no-repeat 50% 0; 
+		background: url(http://www.fundscholar.com/resources/images/background.png); 
+		.main_body {
+			background: url(http://www.fundscholar.com/resources/images/font-img.png) no-repeat 50% 0;
+			
+				
+			.carcass {
+				margin: 0 auto;
+				width: 1000px;
+				height: 100%;
+			}
+		}
+		
 	}
 }
